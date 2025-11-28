@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>タイマー</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="frame">
+    <header>
+      <div class="brand">
+        <img src="images/timerIcon.jpg" alt="タイマーアイコン" class="logo" />
+        <h1>タイマー</h1>
+      </div>
+      <div class="tag">集中タイム</div>
+    </header>
+
+    <div class="time">
+      <span id="minuteDisplay">25</span>
+      <small>分</small>
+      <span>:</span>
+      <span id="secondDisplay">00</span>
+      <small>秒</small>
+    </div>
+
+    <div class="bar" aria-hidden="true">
+      <span id="progress"></span>
+    </div>
+
+    <div class="inputs">
+      <div>
+        <label for="minutes">分</label>
+        <input id="minutes" class="field" type="number" min="0" max="999" value="25" />
+      </div>
+      <div>
+        <label for="seconds">秒</label>
+        <input id="seconds" class="field" type="number" min="0" max="59" value="0" />
+      </div>
+      <div>
+        <label>&nbsp;</label>
+        <button id="set" class="secondary">時間をセット</button>
+      </div>
+      <div>
+        <label>&nbsp;</label>
+        <button id="quickFive" class="secondary">5分にセット</button>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="start">スタート</button>
+      <button id="reset" class="secondary">リセット</button>
+    </div>
+
+    <div class="status" id="status">好きな時間を入力してスタート。</div>
+    </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
